@@ -21,8 +21,13 @@
 // Console.WriteLine($"Decimal: {myDecimal}");
 // Console.WriteLine($"Float  : {myFloat}");
 
-int first = 5;
-int second = 7;
+// int first = 5;
+// int second = 7;
 
-string message = first.ToString() + second.ToString();
-Console.WriteLine(message);
+// string message = first.ToString() + second.ToString();
+// Console.WriteLine(message);
+
+string first = "5";
+string second = "7";
+int sum = int.Parse(first) + int.Parse(second);
+Console.WriteLine(sum);

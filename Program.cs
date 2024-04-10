@@ -1,4 +1,4 @@
-﻿string value = "102";
+﻿string value = "bad";
 int result = 0;
 if (int.TryParse(value, out result))
 {
@@ -6,5 +6,8 @@ if (int.TryParse(value, out result))
 }
 else
 {
-    Console.WriteLine("Unableto report the measurement.");
+    Console.WriteLine("Unable to report the measurement.");
 }
+
+if (result > 0)
+    Console.WriteLine($"Measurement (w/ offset): {50 + result}");
